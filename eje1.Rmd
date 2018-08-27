@@ -1,0 +1,31 @@
+---
+title: "prueba"
+author: "yo"
+date: "27 de agosto de 2018"
+output: html_document
+---
+## Simular
+
+```{r, echo=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+N=rpois(1,90)
+x=runif(N)
+y=runif(N)
+datos=data.frame(x,y)
+```
+
+
+```{r, echo=FALSE }
+library(knitr)
+kable(summary(datos))
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
