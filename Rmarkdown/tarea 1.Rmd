@@ -1,0 +1,31 @@
+---
+title: "Tarea 1"
+author: "yo"
+date: "10 de setiembre de 2018"
+output: pdf_document
+---
+## Simular
+
+```{r, echo=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+N=rpois(1,90)
+x=runif(N)
+y=runif(N)
+datos=data.frame(x,y)
+```
+
+
+```{r, echo=FALSE }
+library(knitr)
+kable(summary(datos))
+```
+
+En la tabla 
+
+## Dispersión de X y Y
+
+```{r pressure, echo=FALSE,fig.align='center', fig.cap='Dispersión de X y Y'}
+plot(x,y)
+```
+
+
